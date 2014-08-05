@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polynomials with Python | A curious mind...</title>
+
+    
+            <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+      <link rel="canonical" href="http://michaelaye.blogspot.com/posts/201305polynoms-with-python.html">
+
+
+
+    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    
+
+    <meta name="author" content="Michael Aye">
+    
+        <meta name="og:title" content="Polynomials with Python">
+        <meta name="og:url" content="http://michaelaye.blogspot.com/posts/201305polynoms-with-python.html">
+            <meta name="og:description" content="Seriously, can it be any easier? ;)If you are not in a pylab session, import the module like this:In [148]: from numpy import poly1d Otherwise, just &quot;import poly1d&quot; should work.Now let's get a polynom">
+        <meta name="og:site_name" content="A curious mind...">
+        <meta name="og:type" content="article">
+
+    
+
+    
+
+
+
+</head>
+<body>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://michaelaye.blogspot.com/">
+
+                <span id="blog-title">A curious mind...</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                
+                <li>
+<a href="../archive.html">Archives</a>
+                </li>
+<li>
+<a href="../categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                    
+    <li>
+    <a href="#" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Polynomials with Python</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Michael Aye</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-05-31T17:28:00+00:00" itemprop="datePublished" title="Publication date">2013-05-31 17:28</time></a></p>
+                <p class="commentline">
+        
+    <a href="201305polynoms-with-python.html#disqus_thread" data-disqus-identifier="cache/posts/201305polynoms-with-python.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="#" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header>
+
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <div dir="ltr" style="text-align: left;">
+<div class="tr_bq">Seriously, can it be any easier? ;)</div>
+<br>If you are not in a pylab session, import the module like this:<br><blockquote>In [148]: from numpy import poly1d</blockquote> Otherwise, just "import poly1d" should work.<br>Now let's get a polynomial for the coefficients of [3,2,1] (always in decreasing order!):<br><blockquote>In [149]: p = poly1d([3,2,1])</blockquote>Printing it provides a semi-analytical printout:<br><blockquote>In [150]: print p<br>   2<br>3 x + 2 x + 1</blockquote>Applying new x values to it is easy, because the poly1d object is a function:<br><blockquote>In [152]: newx = linspace(0,10,10)<br>In [153]: p(newx)<br>Out[153]:<br>array([   1.        ,    6.92592593,   20.25925926,   41.        ,<br>         69.14814815,  104.7037037 ,  147.66666667,  198.03703704,<br>        255.81481481,  321.        ])</blockquote>Lots of other things are possible with this object. IPython's object inspection makes it easy to discover them:<br><blockquote>In [154]: p.<br>p.coeffs    p.deriv     p.integ     p.order     p.variable<br><br>In [155]: p.deriv()<br>Out[155]: poly1d([6, 2])<br>In [156]: pderiv = p.deriv()<br>In [157]: print pderiv<br>6 x + 2</blockquote>Roots for this polynomial can be either determined by the roots function that is imported in a pylab session (or importable like from numpy import roots)<br><blockquote>In [158]: roots(p)<br>Out[158]: array([-0.33333333+0.47140452j, -0.33333333-0.47140452j])<br>In [159]: p.r<br>Out[159]: array([-0.33333333+0.47140452j, -0.33333333-0.47140452j])</blockquote>
+<br><br><br><br>PS: One of these days I really have to find out how to do code high-lighting in Blogger, or, preferably, go all the way and do IPython notebook posts.</div>
+    </div>
+    <aside class="postpromonav">
+    <nav>
+    
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../categories/python.html" rel="tag">Python</a></li>
+           <li><a class="tag p-category" href="../categories/scientific-programming.html" rel="tag">scientific programming</a></li>
+        </ul>
+
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="201110comfort-at-1-au.html" rel="prev" title="Comfort at 1 AU">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="201306polyfit.html" rel="next" title="polyfit">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="http://michaelaye.blogspot.com/posts/201305polynoms-with-python.html",
+        disqus_title="Polynomials with Python",
+        disqus_identifier="cache/posts/201305polynoms-with-python.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section>
+    
+
+</article>
+
+        
+       <script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2014         <a href="mailto:noreply@blogger.com">Michael Aye</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+    </div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    
+
+
+</body>
+</html>
