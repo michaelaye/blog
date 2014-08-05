@@ -34,76 +34,32 @@ article: http://ogp.me/ns/article#
 
 </head>
 <body>
+    <section class="social">
+        <ul>
+                    <li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
 
-<!-- Menubar -->
+        </ul>
+    </section>
+    <section class="page-content">
+        <div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">MDS errors on the Mac</h1>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-<!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://michaelaye.github.io/blog/">
-
-                <span id="blog-title">Michael's blog</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                                <li>
-<a href="../archive.html">Archive</a>
-                </li>
-<li>
-<a href="../categories/index.html">Tags</a>
-                </li>
-<li>
-<a href="../rss.xml">RSS feed</a>
-
-                
-            </li>
-</ul>
-
-            <ul class="nav navbar-nav navbar-right">
-    <li>
-    <a href="#" id="sourcelink">Source</a>
-    </li>
-                
-            </ul>
-        </div>
-<!-- /.navbar-collapse -->
-    </div>
-<!-- /.container -->
-</nav>
-
-<!-- End of Menubar -->
-
-<div class="container">
-    <div class="body-content">
-        <!--Body content-->
-        <div class="row">
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2011-02-25T13:36:00-08:00">2011-02-25 13:36</time>
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
-        <header>
-            <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">MDS errors on the Mac</a></h1>
+                      |  
+        <a href="#" id="sourcelink">Source</a>
 
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">K.-Michael Aye</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2011-02-25T13:36:00-08:00" itemprop="datePublished" title="Publication date">2011-02-25 13:36</time></a></p>
-                <p class="commentline">            <a href="201102i-was-getting-lot-of-mds-related-errors.html#disqus_thread" data-disqus-identifier="cache/posts/201102i-was-getting-lot-of-mds-related-errors.html">Comments</a>
-
-
-        </p>
-</div>
-        
-    </header>
-
-    <div class="e-content entry-content" itemprop="articleBody text">
-    <div>I was getting a lot of MDS related errors in my system logfile (visible via the Console.app in Mac).</div>
+            </div>
+            
+        </div>
+        <div class="body">
+            <div>I was getting a lot of MDS related errors in my system logfile (visible via the Console.app in Mac).</div>
 <div>Like these:</div>
 <div><br></div>
 <div>Feb 25 12:42:00 paradigm /System/Library/Frameworks/SecurityFoundation.framework/Versions/A/dotmacfx.app/Contents/MacOS/dotmacfx[89682]: MDS Error: unable to create user DBs in /var/folders/PO/PO-GUydDF4mpVHTQxsRatE+++TI/-Caches-//mds</div>
@@ -118,11 +74,8 @@ article: http://ogp.me/ns/article#
 <div>To do that you keep pressing the SHIFT key while rebooting. Once you are fully booted into safe mode, just restart again and you will see (if you are as sensitive as me to the snappiness of a GUI) that things move a tad snappier now, like it was when the Mac was still fresh. ;)</div>
 <div><br></div>
 <div>Good luck!</div>
-    </div>
-    <aside class="postpromonav">
-    <nav>
-    
-            <ul class="pager">
+        </div>
+                <ul class="pager">
             <li class="previous">
                 <a href="201102find-out-on-which-computer-you-are.html" rel="prev" title="Find out on which computer you are 'python-ing'">Previous post</a>
             </li>
@@ -131,11 +84,7 @@ article: http://ogp.me/ns/article#
             </li>
         </ul>
 
-    </nav>
-    </aside>
-        <section class="comments">
-        <h2>Comments</h2>
-                        <div id="disqus_thread"></div>
+                            <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="michaelayegithubioblog",
             disqus_url="http://michaelaye.github.io/blog/posts/201102i-was-getting-lot-of-mds-related-errors.html",
@@ -155,22 +104,18 @@ article: http://ogp.me/ns/article#
     <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-        </section>
-</article>
-               <script>var disqus_shortname="michaelayegithubioblog";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-
-
-        </div>
-        <!--End of body content-->
-
-        <footer>
-            Contents © 2014         <a href="mailto:kmichael.aye@gmail.com">K.-Michael Aye</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+        
+    </div>
+                    <footer id="footer" role="contentinfo">
+            <p>Contents © 2014         <a href="mailto:kmichael.aye@gmail.com">K.-Michael Aye</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
-    </div>
-</div>
 
-            <script src="../assets/js/all-nocdn.js"></script>
+        </div>
+    </section>
+    
+    
+                <script src="../assets/js/all-nocdn.js" type="text/javascript"></script>
     
 <!-- Social buttons -->
 <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
@@ -194,8 +139,10 @@ article: http://ogp.me/ns/article#
 <!-- End of social buttons -->
 
 
-    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
-
-
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
 </body>
 </html>
