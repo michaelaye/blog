@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Michael's blog (notebook)</title><link>http://michaelaye.github.io/blog/</link><description></description><language>en</language><lastBuildDate>Tue, 05 Aug 2014 14:57:30 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating fans on Mars</title><link>http://michaelaye.github.io/blog/posts/mars-fan-creation.html</link><dc:creator>K.-Michael Aye</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="the-sun-is-back-"&gt;The sun is back!&lt;/h1&gt;
+&lt;h3 id="disclaimer"&gt;Disclaimer&lt;/h3&gt;
+&lt;p&gt;I wrote this blog post 2 weeks ago, but I wanted to show the IPython notebook in its full glory, so I got delayed posting this until I finally had finished my Blogger blog transition to a static website blogging system that supports the display of IPython notebooks. So, the excitement that hopefully still transpires, is not as fresh, but nonetheless: &lt;em&gt;Mars is right now producing fans every day somewhere!&lt;/em&gt; I updated all times below to have more relevant data to show.&lt;/p&gt;
+&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;I realised today that we are so close to the official beginning of Martian southern spring, I wondered if the sun already is up over Inca City. Here is how I go about finding out what's currently going on there, using tools that I have written over the years.&lt;/p&gt;
+&lt;p&gt;First I make my main library for this, &lt;code&gt;kmaspice&lt;/code&gt;, available to me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [1]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pymars&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;kmaspice&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Now I will create an object that knows how to deal with Martian times and illuminations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [2]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;inca&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;kmaspice&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;MarsSpicer&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I saved some predefined places and their locations into the code, so that I don't need to remember the coordinates all the time. So let's justify the variable name by actually setting it on top of Inca City:
+&lt;/p&gt;&lt;p&gt;&lt;a href="http://michaelaye.github.io/blog/posts/mars-fan-creation.html"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>notebook</category><category>python</category><guid>http://michaelaye.github.io/blog/posts/mars-fan-creation.html</guid><pubDate>Tue, 05 Aug 2014 20:18:59 GMT</pubDate></item></channel></rss>

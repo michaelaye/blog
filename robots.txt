@@ -1,0 +1,2 @@
+Sitemap: http://michaelaye.github.io/blog/sitemapindex.xml
+
